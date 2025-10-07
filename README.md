@@ -10,7 +10,7 @@ Se implementaron distintos tipos de usuarios, grupos con permisos específicos y
 - **Python 3.12
 - **HTML + Bootstrap 5
 
-![Página de inicio del proyecto](img.home.jpg)
+![Página de inicio del proyecto](img/home.jpg)
 
 ## Estructura del Proyecto
 
@@ -47,7 +47,7 @@ Usuario	Contraseña	Rol / Grupo	Permisos	Observación
 - **trabajador1	equipo123	Solo lectura	Solo “view”	No puede modificar
 - **trabajador2	equipo123	Solo lectura	Solo “view”	No puede modificar
 
-![Página de usuarios](img.usuarios_admin.png)
+![Página de usuarios](img/usuarios_admin.png)
 
 ## Grupos y Permisos
 
@@ -61,7 +61,7 @@ Gestores de Productos:
 - **Permisos: add_producto, change_producto, view_producto.
 - **No pueden eliminar productos.
 
-![grupos de usuarios](img.grupos_usuarios.png)
+![grupos de usuarios](img/grupos_usuarios.png)
 
 ## Limitación de Acceso al Sitio Administrativo
 
@@ -92,7 +92,7 @@ Y la vista:
 def custom_403(request, exception=None):
     return render(request, "403.html", status=403)
 ```
-![error](img.error_403.png)
+![error](img/error_403.png)
 
 Prueba:
 Usuario gestor_PM2 (sin permisos) intenta acceder a /productos/ o /solo-superuser/ → muestra la vista 403 personalizada.
@@ -107,7 +107,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ```
 
-![natvar](img.natvar.png)
+![natvar](img/natvar.png)
 
 ## Flujo General de Acceso
 - **Situación	Resultado esperado
