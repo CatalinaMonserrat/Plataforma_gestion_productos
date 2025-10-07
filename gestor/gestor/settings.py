@@ -41,6 +41,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'gestor.urls'
 
+
+LOGIN_URL = '/admin/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Inicio | Gestión de Productos{% endblock %}
+{% block content %}
+<div class="text-center py-5">
+    <h1 class="display-6 fw-bold">Bienvenida</h1>
+    <p class="lead">Plataforma de Gestión de Productos en Django.</p>
+
+    <div class="d-flex justify-content-center gap-3">
+        <a class="btn btn-primary" href="/admin/">Ir al Panel Administrativo</a>
+        <a class="btn btn-outline-dark" href="{% url 'listado_productos' %}">Ver Productos</a>
+    </div>
+</div>
+{% endblock %}
